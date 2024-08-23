@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+#top{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(imges/top.jpg);
+    background-size: cover;
+    background-position: top;
+}
+#bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    background-color: blue;
+}
+#bone{
+    width: 25%;
+    min-height: inherit;
+    background-color: #fff;
+    padding: 30px;
+}
+#bone p{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#btwo{
+    width: 25%;
+     min-height: inherit; 
+    background-image: url(imges/two.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#bthree{
+    width: 20%;
+     min-height: inherit; 
+    /* background-color: green; */
+}
+#bthreetop{
+    width: 100%;
+    min-height: 20vh;
+    padding: 20px;
+    background-color: orangered;
+    color: #fff;
+}
+#bthreetop p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+#bthreebottom{
+    width: 100%;
+   min-height: 20vh;
+    background-image: url(imges/3bottom.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#bfour{
+    width: 30%;
+    min-height: inherit;
+    background-color: #444;
+    color: white;
+    padding: 30px;
+}
+#overlay{ 
+     position: relative; 
+    min-height: inherit;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.062);
+}
+#text{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    padding: 0 10vw;
+    bottom: 20%;
+    color: #fff;
+    /* background-color: red; */
+    position: absolute;
+}
+#text h1{
+    font-size: 6rem;
+    font-weight: 500;
+}
+#textright{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#textright p{
+    font-size: 18px;
+    width: 40%;
+}
+#text i{
+    color: #fff;
+}
+.not{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.not #photo{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+.not p{
+    width: 80%;
+    font-size: 12px;
+}
+@media(max-width: 500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #text h1{
+        font-size: 10vw;
+        min-height: inherit;
+    }
+    #overlay #text #textright{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #overlay #text #textright p{
+width: initial;
+margin-top: 20px;
+    }
+    #overlay #text #textright #icons{
+margin-top: 30px;
+    }
+#bottom{
+    flex-direction: column;
+}
+#bone{ 
+    width: 100%;
+}
+#btwo{
+    width: 100%;
+    min-height: 40vh;
+}
+#bthree{
+    flex-direction: column;
+    width: 100%;
+}
+#bottom{
+    min-height: 20vh;
+}
+#bfour{
+    width: 100%;
+}
+#bthreebottom{
+    min-height: 40vh;
+}
+}
